@@ -1,0 +1,61 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add Android TV Bridge",
+        "description": "Configure a TV using Android TV Remote plus ADB.",
+        "data": {
+          "name": "Name",
+          "host": "IP address or host name",
+          "device_class": "ADB device class",
+          "profile": "Device profile",
+          "adb_key_path": "ADB key path",
+          "enable_remote_protocol": "Enable Android TV Remote protocol",
+          "poll_interval": "Polling interval (seconds)"
+        },
+        "data_description": {
+          "host": "Static IP address or DNS name for the TV or streaming box."
+        }
+      },
+      "filters": {
+        "title": "Android TV Bridge source filters",
+        "description": "Choose any discovered apps or local sources that should be hidden from the source selector.",
+        "data": {
+          "hidden_apps": "Hide apps from source selector",
+          "hidden_sources": "Hide local sources from source selector"
+        },
+        "data_description": {
+          "hidden_apps": "Apps selected here are removed from the source selector but may still be detected as the current app.",
+          "hidden_sources": "TV inputs and commands selected here are removed from the source selector."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not connect to the device.",
+      "invalid_source_map": "The internal source list is not valid."
+    },
+    "abort": {
+      "already_configured": "This device is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Android TV Bridge settings",
+        "description": "Tune polling, update the device address, and hide entries from the source selector.",
+        "data": {
+          "host": "IP address or host name",
+          "hidden_apps": "Hide apps from source selector",
+          "hidden_sources": "Hide inputs and commands from source selector",
+          "poll_interval": "Polling interval (seconds)"
+        },
+        "data_description": {
+          "host": "Static IP address or DNS name for the TV or streaming box.",
+          "poll_interval": "Lower values update power and volume faster but increase polling.",
+          "hidden_apps": "Apps selected here are removed from the source selector but may still be detected as the current app.",
+          "hidden_sources": "TV inputs and commands selected here are removed from the source selector."
+        }
+      }
+    }
+  }
+}

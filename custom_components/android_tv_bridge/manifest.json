@@ -1,0 +1,14 @@
+{
+  "domain": "android_tv_bridge",
+  "name": "Android TV Bridge",
+  "codeowners": ["@Hyperion5088"],
+  "config_flow": true,
+  "documentation": "https://github.com/Hyperion5088/homeassistant-android-tv-bridge",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/Hyperion5088/homeassistant-android-tv-bridge/issues",
+  "requirements": [
+    "androidtv==0.0.75",
+    "androidtvremote2==0.0.13"
+  ],
+  "version": "0.1.0-beta.1"
+}

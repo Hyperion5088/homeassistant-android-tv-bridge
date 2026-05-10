@@ -1,0 +1,61 @@
+name: Bug report
+description: Report a problem with Android TV Bridge.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing Android TV Bridge. Please include enough detail to reproduce the problem without sharing private network credentials.
+  - type: input
+    id: version
+    attributes:
+      label: Integration version
+      placeholder: 0.1.0-beta.1
+    validations:
+      required: true
+  - type: input
+    id: home_assistant_version
+    attributes:
+      label: Home Assistant version
+      placeholder: 2026.5.1
+    validations:
+      required: true
+  - type: dropdown
+    id: device_type
+    attributes:
+      label: Device type
+      options:
+        - Android TV / Google TV
+        - Amazon Fire TV
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the broken behaviour and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open source selector
+        2. Select HDMI 1
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Paste relevant Home Assistant logs. Remove tokens, keys, public hostnames, and private details.
+      render: text
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Include entity attributes, current app package, source list, or ADB/Android TV Remote notes if relevant.

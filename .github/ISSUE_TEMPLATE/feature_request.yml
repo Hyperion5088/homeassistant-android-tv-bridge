@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest an improvement for Android TV Bridge.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What would you like Android TV Bridge to do?
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use case
+      description: What device/workflow needs this?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Possible approach
+      description: Optional implementation idea, API detail, or example entity/source naming.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra context
+      description: Links, logs, screenshots, or device notes.
